@@ -203,7 +203,7 @@ void doLightSensor()
   {
     closeGate();    
   }
-  else*/ if(lightLevel >= 128)
+  else*/if(lightLevel >= 128)
   {
     openGate();
     notifyCapDetected();
@@ -226,7 +226,7 @@ void closeGate()
 void notifyCapDetected()
 {
   //Sends a signal to the serial port
-  Serial.print("Cap detected");
+  Serial.println("CAP");
   delay(10);
 }
 
